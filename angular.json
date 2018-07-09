@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-admin": {
+    "fabrix": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -77,24 +77,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-admin:build"
+            "browserTarget": "fabrix:build"
           },
           "configurations": {
             "staging": {
-              "browserTarget": "ng-admin:build:staging"
+              "browserTarget": "fabrix:build:staging"
             },
             "testing": {
-              "browserTarget": "ng-admin:build:testing"
+              "browserTarget": "fabrix:build:testing"
             },
             "production": {
-              "browserTarget": "ng-admin:build:production"
+              "browserTarget": "fabrix:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-admin:build"
+            "browserTarget": "fabrix:build"
           }
         },
         "test": {
@@ -131,7 +131,7 @@
         }
       }
     },
-    "ng-admin-e2e": {
+    "fabrix-e2e": {
       "root": "",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -140,7 +140,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ng-admin:serve"
+            "devServerTarget": "fabrix:serve"
           }
         },
         "lint": {
@@ -157,7 +157,7 @@
       }
     }
   },
-  "defaultProject": "ng-admin",
+  "defaultProject": "fabrix",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

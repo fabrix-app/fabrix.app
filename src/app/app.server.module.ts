@@ -28,7 +28,7 @@ import { EffectsModule } from '@ngrx/effects'
 // import { StoreRouterConnectingModule } from '@ngrx/router-store'
 // import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 import { NgrxFormsModule } from 'ngrx-forms'
-import { reducers, getInitialState} from './core/store/reducers'
+import { reducers, getInitialState } from './core/store/reducers'
 import { AuthEffects } from './core/store/effects'
 
 @NgModule({
@@ -48,7 +48,6 @@ import { AuthEffects } from './core/store/effects'
     EffectsModule.forRoot([ AuthEffects ]),
     // StoreRouterConnectingModule,
     NgrxFormsModule,
-    // NgrxQueryModule.forRoot({}),
     NgEngineModule
   ],
   providers: [

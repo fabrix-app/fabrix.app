@@ -95,10 +95,10 @@ Then use the docker compose:
 
 `docker-compose up -d --build web`
 
-Then deploy the container
+Then deploy the container to staging
 
-` heroku container:push ngadmin --app=vintage-cellars-staging-admin --arg API_URL=<api_url>
-`
+`heroku container:push fabrix.app --app=fabrix-app`
+`heroku container:release fabrix.app --app=fabrix-app`
 
 ## Known Issues
 The Fabrix REPL (spool-repl) includes some characters that production webpack builds (`webpack -p`) can not parse and fails during the uglify process.  Currently, we use the normal webpack build which is faster but has a larger slug. If you can fix this, we would love a PR!

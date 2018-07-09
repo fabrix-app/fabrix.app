@@ -12,8 +12,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 
 import { NgrxFormsModule } from 'ngrx-forms'
 
-// import { NgrxQueryModule } from 'ngrx-query'
-
 // Root Reducers, Actions, Effects
 import { reducers, getInitialState } from './core/store/reducers'
 // import * as fromRootActions from './store/actions'
@@ -61,7 +59,6 @@ import * as appConfig from '../appConfig'
       // logOnly: environment.production
     }),
     NgrxFormsModule,
-    // NgrxQueryModule.forRoot({}),
     NgEngineModule,
     appConfig.environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
