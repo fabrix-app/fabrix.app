@@ -39,7 +39,7 @@
     "test:e2e": "ng e2e",
     "test:ng:watch": "ng test",
     "test:server": "npm run build && mocha",
-    "lint": "eslint --fix . && ng lint --fix .",
+    "lint": "ng lint --fix .",
     "e2e": "ng e2e",
     "heroku-postbuild": "npm run build:prod:ngsw",
     "prebuild": "node ./prebuild.js"
@@ -98,8 +98,6 @@
     "@types/node": "~9.4.7",
     "@types/winston": "^2.2.20-alpha",
     "codelyzer": "^4.0.1",
-    "eslint": "^4.17.0",
-    "eslint-config-fabrix": "^3.1.0",
     "jasmine": "^2.5.3",
     "jasmine-core": "~2.8.0",
     "jasmine-marbles": "^0.3.1",
