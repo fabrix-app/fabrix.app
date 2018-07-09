@@ -1,0 +1,14 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+.fabrix-other-feature {
+  text-align: center;
+
+  &:hover {
+    background-color: rgba($blue, 0.10)
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

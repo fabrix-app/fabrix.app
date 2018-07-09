@@ -1,0 +1,12 @@
+{
+  "/api/v1": {
+    "target":  {
+      "host": "fabrix.app",
+      "protocol": "https:",
+      "port": 443
+    },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "info"
+  }
+}

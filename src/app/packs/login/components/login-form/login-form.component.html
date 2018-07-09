@@ -1,0 +1,97 @@
+<form
+  [ngrxFormState]="loginFormState"
+  (submit)="submitForm.emit(loginFormState.value)"
+>
+  <!--<pre>{{ loginState | json }}</pre>-->
+  <ng-container *ngIf="!loginState.loading && loginState.error">
+  <div class="row">
+    <div class="col-12">
+      <div class="alert alert-warning" role="alert">
+        {{ loginState.error?.error?.message }}
+        {{ loginState.error?.error?.error }}
+      </div>
+    </div>
+  </div>
+  </ng-container>
+  <div class="row">
+    <mat-form-field *ngIf="!hidden('email')" class="col-12">
+      <input
+        matInput
+        type="text"
+        placeholder="Email"
+        [ngrxFormControlState]="loginFormState.controls.email"
+      >
+      <mat-error>
+        <ng-container [ngSwitch]="true">
+          <span *ngSwitchCase="!!loginFormState.errors?._email?.required">
+            Email is required
+          </span>
+          <span *ngSwitchCase="!!loginFormState.errors?._email?.email">
+            Not a valid email
+          </span>
+          <span *ngSwitchDefault>Unknown Error</span>
+        </ng-container>
+      </mat-error>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field *ngIf="!hidden('password')" class="col-12">
+      <input
+        type="password"
+        matInput
+        placeholder="Password"
+        [ngrxFormControlState]="loginFormState.controls.password"
+      >
+      <mat-error>
+        <ng-container [ngSwitch]="true">
+          <span *ngSwitchCase="!!loginFormState.errors?._password?.required">
+            Password is required
+          </span>
+          <span *ngSwitchCase="!!loginFormState.errors?._password?.password">
+            Not a valid Password
+          </span>
+          <span *ngSwitchCase="!!loginFormState.errors?._password?.minLength">
+            Not a valid Password
+          </span>
+          <span *ngSwitchDefault>Unknown Error</span>
+        </ng-container>
+      </mat-error>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <div class="col-12" *ngIf="!hidden('remember_me')">
+      <mat-checkbox
+        [ngrxFormControlState]="loginFormState.controls.remember_me"
+      >Remember Me</mat-checkbox>
+      <mat-error *ngIf="loginFormState.errors?._remember_me?.required">
+        Remember Me is required
+      </mat-error>
+    </div>
+  </div>
+  <div class="buttons" *ngIf="!hidden('buttons')">
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="loginState.loading
+                  || loginFormState.isInvalid
+                  || loginFormState.isValidationPending"
+    >
+      Login
+    </button>
+    <!--<button-->
+      <!--mat-raised-button-->
+      <!--type="button"-->
+      <!--[disabled]="loginFormState.isPristine-->
+                  <!--&& loginFormState.isUntouched-->
+                  <!--&& loginFormState.isUnsubmitted"-->
+      <!--(click)="resetForm.emit(login)"-->
+    <!--&gt;-->
+      <!--Reset-->
+    <!--</button>-->
+  </div>
+  <mat-progress-bar
+    *ngIf="loginState.loading || loginFormState.isValidationPending"
+    mode="query"
+  ></mat-progress-bar>
+</form>

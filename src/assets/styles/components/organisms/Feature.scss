@@ -1,0 +1,53 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+.fabrix-feature {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 3em;
+
+  .fabrix-feature-text, .fabrix-feature-image {
+    margin-bottom: 1em;
+  }
+
+  .fabrix-feature-text {
+    text-align: center;
+    h3 { margin-top: 0; }
+  }
+
+  .fabrix-feature-image {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 1.5em auto;
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-phone) {
+
+  .fabrix-feature {
+    margin: 0 -1em 4em -1em;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.25em;
+
+    .fabrix-feature-text, .fabrix-feature-image {
+      flex: 1;
+      margin: 0 2em;
+    }
+
+    .fabrix-feature-text {
+      text-align: left;
+      line-height: 1.25em;
+    }
+
+    .fabrix-feature-image {}
+
+    &[data-reverse=true] {
+      flex-direction: row-reverse;
+      .fabrix-feature-image {}
+    }
+
+  }
+
+}

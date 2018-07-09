@@ -1,0 +1,35 @@
+:host {
+  display: block;
+}
+
+a.toggle {
+  position: relative;
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+
+  h3 {
+    text-transform: uppercase;
+
+    mat-icon {
+      position: absolute;
+      right: 4px;
+      font-size: 20px;
+    }
+  }
+}
+
+app-sidenav-collapse.level-1 {
+  display: none;
+  &.opened {
+    display: block;
+  }
+  &.closed {
+    display: none;
+  }
+}

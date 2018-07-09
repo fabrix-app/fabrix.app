@@ -1,0 +1,5 @@
+export { default as Documentation } from './Documentation'
+export { default as Home } from './Home'
+export { default as Plugins } from './Plugins'
+export { default as Start } from './Start'
+export { default as Support } from './Support'

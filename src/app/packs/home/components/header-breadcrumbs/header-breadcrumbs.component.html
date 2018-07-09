@@ -1,0 +1,58 @@
+<ol class="breadcrumbs">
+  <ng-container *ngFor="let nav of nav?.selected; let first = first; let last = last;">
+    <li *ngIf="!first" class="crumb">
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon *ngIf="nav?.icon">
+          {{ nav?.icon }}
+        </mat-icon>
+        <span>{{ nav?.name || 'Not Found' }}</span>
+      </button>
+
+      <mat-menu
+        #menu="matMenu"
+        [class]="'crumb-menu'"
+      >
+        <mat-list>
+          <h3 matSubheader>
+            {{ nav?.group || 'Not Found' }}
+          </h3>
+        </mat-list>
+        <ng-container
+          *ngFor="let sib of nav?.siblings"
+        >
+          <a
+            *ngIf="sib.display !== false"
+            mat-menu-item
+            [routerLink]="[sib.routerLink]"
+            routerLinkActive="active"
+          >
+            <mat-icon *ngIf="sib?.icon">{{ sib?.icon }}</mat-icon>
+            <span>{{ sib.name }}</span>
+          </a>
+        </ng-container>
+        <a
+          *ngIf="!nav?.hasSiblings"
+          mat-menu-item
+          [routerLink]="['/']"
+        >
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </a>
+        <a
+          *ngIf="!nav?.hasSiblings"
+          mat-menu-item
+          (click)="goBack()"
+        >
+          <mat-icon>arrow_back</mat-icon>
+          <span>Go Back</span>
+        </a>
+      </mat-menu>
+    </li>
+    <li
+      class="crumb separator"
+      *ngIf="!first && !last"
+    >
+      <mat-icon>chevron_right</mat-icon>
+    </li>
+  </ng-container>
+</ol>

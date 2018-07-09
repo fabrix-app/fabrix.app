@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+
+/* Breadcrumbs */
+ol.breadcrumbs {
+  display: inline-block;
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+
+  & > li {
+    display: inline-block;
+
+    &.separator {
+      line-height: 36px;
+      padding: 0px;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: baseline;
+      white-space: nowrap;
+
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
+      & > mat-icon {
+        vertical-align: middle;
+      }
+
+    }
+  }
+}

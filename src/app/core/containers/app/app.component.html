@@ -1,0 +1,30 @@
+<!--<mat-sidenav-container>-->
+  <!--<mat-sidenav-->
+    <!--[mode]="sidenav?.mode"-->
+    <!--[opened]="sidenav?.opened"-->
+    <!--[fixedInViewport]="sidenav?.fixedInViewport"-->
+    <!--[fixedTopGap]="sidenav?.fixedTopGap"-->
+    <!--[fixedBottomGap]="sidenav?.fixedBottomGap"-->
+  <!--&gt;-->
+    <!--<app-sidenav-->
+      <!--[user]="user$ | async"-->
+      <!--[isAuthenticated]="isAuthenticated$ | async"-->
+      <!--[nav]="nav$ | async"-->
+      <!--(toggle)="toggleNavChild($event)"-->
+    <!--&gt;</app-sidenav>-->
+  <!--</mat-sidenav>-->
+
+  <!--<mat-sidenav-content>-->
+    <!--<div class="header container-fluid stuck" [ngStyle]="{'height.px': header?.height}">-->
+      <!--<app-header-->
+        <!--[nav]="nav$ | async"-->
+      <!--&gt;</app-header>-->
+    <!--</div>-->
+    <!--<div class="container-fluid" [ngStyle]="{'padding-top.px': header?.height}">-->
+      <!--<router-outlet></router-outlet>-->
+    <!--</div>-->
+  <!--</mat-sidenav-content>-->
+
+<!--</mat-sidenav-container>-->
+
+<router-outlet></router-outlet>

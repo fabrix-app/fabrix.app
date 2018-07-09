@@ -1,0 +1,23 @@
+<div class="row no-gutters">
+  <app-header-search
+    class="col"
+    [query]="query"
+    (updateQuery)="_updateQuery($event)"
+  ></app-header-search>
+  <div class="col col-auto">
+    <button
+      mat-icon-button
+      (click)="clickMenu($event)"
+      matTooltip="My Profile"
+    >
+      <img  class="rounded" src="https://via.placeholder.com/35x35">
+    </button>
+    <button
+      mat-icon-button
+      (click)="clickAlerts($event)"
+      matTooltip="Alerts"
+    >
+      <img class="rounded-circle" src="https://via.placeholder.com/35x35">
+    </button>
+  </div>
+</div>

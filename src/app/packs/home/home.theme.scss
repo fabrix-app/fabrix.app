@@ -1,0 +1,76 @@
+@import '~@angular/material/theming';
+
+@mixin home-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+  $typographyConfig: mat-typography-config();
+
+  app-sidenav-collapse {
+    box-sizing: content-box;
+    display: block;
+    margin: 0;
+    transition: margin 225ms cubic-bezier(.4,0,.2,1);
+
+    &.expanded {
+      visibility: visible;
+    }
+
+    &.level-1 {
+      & > a {
+        display: block;
+        &.active {
+          background: mat-color($primary, 600);
+          & * {
+            color: mat-contrast($primary, 600) !important;
+          }
+        }
+      }
+    }
+
+    &.level-2 {
+      background: mat-color($background, card);
+
+      & > a {
+        display: block;
+        &.active {
+          background: mat-color($primary, 400);
+          & * {
+            color: mat-contrast($primary, 400) !important;
+          }
+        }
+      }
+
+      ///deep/ .mat-nav-list a {
+      //  display: block;
+      //  &.active {
+      //    background: blue;
+      //    .mat-list-item {
+      //      color: white !important;
+      //    }
+      //  }
+      //}
+    }
+
+    &.level-3 {
+      background: mat-color($background, card);
+    }
+  }
+
+  .crumb-menu {
+    a.mat-menu-item {
+      display: block;
+      &:hover {
+        text-decoration: none;
+        color: mat-color($foreground, text)
+      }
+      &.active {
+        background: mat-color($primary, 600);
+        & * {
+          color: mat-contrast($primary, 600) !important;
+        }
+      }
+    }
+  }
+}

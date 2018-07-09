@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-content>
+    <app-login-form
+      class="mb-3"
+      [loginState]="loginState"
+      [loginFormState]="loginFormState"
+      (resetForm)="resetForm.emit($event)"
+      (submitForm)="submitForm.emit($event)"
+    ></app-login-form>
+    <mat-divider></mat-divider>
+    <div class="actions mt-3 pt-3">
+      <a [routerLink]="['.','forgot_password']">
+        Forgot Password
+      </a>
+    </div>
+  </mat-card-content>
+</mat-card>

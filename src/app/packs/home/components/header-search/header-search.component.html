@@ -1,0 +1,21 @@
+<form
+  class="form-inline"
+
+>
+  <mat-icon class="search-icon">search</mat-icon>
+  <input
+    class="form-control mr-sm-2 mat-elevation-z1 search"
+    type="search"
+    [placeholder]="placeholder"
+    aria-label="search"
+    [matAutocomplete]="auto"
+  />
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option
+      *ngFor="let result of filteredResults | async"
+      [value]="result"
+    >
+      <span>{{ result }}</span>
+    </mat-option>
+  </mat-autocomplete>
+</form>

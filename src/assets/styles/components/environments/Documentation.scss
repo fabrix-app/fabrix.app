@@ -1,0 +1,134 @@
+@import 'colors.scss';
+
+.start, .doc {
+
+  article {
+    h1:before, h2:before, h3:before, h4:before, h5:before {
+      display: block;
+      content: "";
+      height: 80px;
+      margin-top: -80px;
+    }
+  }
+
+  section.main-content {
+    padding: 1em 0;
+    font-size: 18px;
+
+    p {
+      line-height: 1.5;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h1 code,
+    h2 code,
+    h3 code {
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 2.1em;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 1.75em;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    h4, h5 {
+      font-size: 1.25em;
+      font-weight: bold;
+    }
+    h4 {
+      color: $brown;
+    }
+    h5 {
+      color: $gray;
+    }
+
+    ol {
+      font-size: 1.1em;
+      font-weight: bold;
+      li {
+        margin-top: 6px;
+      }
+    }
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+    a[href^="#"] {
+      text-decoration: none;
+      color: inherit;
+    }
+    table {
+      margin-top: 0.5em;
+      font-size: 0.9em;
+    }
+    pre {
+      background-color: $brown;
+      padding: 1em;
+      margin-bottom: 2em;
+      font-size: 1.1em;
+    }
+    code {
+      font-size: 0.8em;
+      padding: 1px 4px;
+      background-color: $very-light-brown;
+      color: $brown;
+      font-family: "Monaco", "Consolas", monospace;
+    }
+    pre > code {
+      background-color: $brown;
+      color: $light-brown;
+    }
+    .err {
+      color: $green;
+      background-color: $brown;
+    }
+    .language-json .err {
+      color: $medium-brown;
+    }
+
+    // normal stuff
+    .nx, .nl {
+      color: $light-brown;
+    }
+
+    // keywords
+    .k, .kr, .kc {
+      color: $green;
+    }
+
+    .nb {
+      color: $green;
+    }
+
+    // comments
+    .cm, .c1 {
+      color: $medium-brown;
+    }
+
+    // punctuation
+    .p, .o {
+      color: $very-light-brown;
+    }
+
+    // strings
+    .s1, .s2, .mi {
+      color: $green;
+    }
+
+    // keys
+    .nt, .na {
+      color: $light-blue;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<div class="objective-action-frame container">
+  <div class="row">
+    <app-objective-switch
+      class="col my-3"
+    ></app-objective-switch>
+  </div>
+</div>
+
+<div class="user-action-frame">
+  <div class="user-action-frame-top container">
+    <div class="row">
+      <app-profile
+        class="col"
+        [user]="user"
+        [isAuthenticated]="isAuthenticated"
+      ></app-profile>
+    </div>
+  </div>
+  <mat-nav-list dense>
+    <ng-container
+      *ngFor="let group of nav?.children; trackBy: trackChild; let last = last;"
+    >
+      <ng-container *ngIf="group.display !== false">
+        <a
+          class="toggle"
+          (click)="toggle.emit(group)"
+        >
+          <h3 matSubheader>
+            <mat-icon>{{ group.open ? 'indeterminate_check_box' : 'add_box'}}</mat-icon>
+            <span>{{ group.name }}</span>
+          </h3>
+        </a>
+        <app-sidenav-collapse
+          *ngIf="group.hasChildren"
+          [nav]="group.children"
+          [ngClass]="group.classes"
+        >
+        </app-sidenav-collapse>
+        <mat-divider *ngIf="!last"></mat-divider>
+      </ng-container>
+    </ng-container>
+  </mat-nav-list>
+  <!--<mat-tab-group>-->
+    <!--<mat-tab>-->
+      <!--<ng-template matTabLabel>-->
+        <!--<mat-icon>apps</mat-icon>-->
+      <!--</ng-template>-->
+      <!--<mat-nav-list dense>-->
+        <!--<app-sidenav-collapse-->
+          <!--[navigation]="navigation"-->
+          <!--[level]="1"-->
+        <!--&gt;-->
+        <!--</app-sidenav-collapse>-->
+      <!--</mat-nav-list>-->
+    <!--</mat-tab>-->
+    <!--<mat-tab>-->
+      <!--<ng-template mat-tab-label>-->
+        <!--<mat-icon>mode_comment</mat-icon>-->
+      <!--</ng-template>-->
+    <!--</mat-tab>-->
+    <!--<mat-tab>-->
+      <!--<ng-template mat-tab-label>-->
+        <!--<mat-icon>settings</mat-icon>-->
+      <!--</ng-template>-->
+    <!--</mat-tab>-->
+  <!--</mat-tab-group>-->
+</div>

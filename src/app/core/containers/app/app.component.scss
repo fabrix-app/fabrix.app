@@ -1,0 +1,43 @@
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Side Nav*/
+mat-sidenav {
+  width: 200px;
+}
+
+mat-sidenav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header {
+  background: #ffffff;
+}
+
+.stuck {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  z-index: 1;
+
+  & + div {
+    padding-top: 70px;
+    position: absolute;
+    overflow: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0px;
+  }
+}

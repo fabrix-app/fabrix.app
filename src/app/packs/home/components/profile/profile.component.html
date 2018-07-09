@@ -1,0 +1,11 @@
+<ng-container *ngIf="isAuthenticated">
+  <a [routerLink]="['/profile']">
+    <div class="media">
+      <img class="mr-2 rounded-circle" src="https://via.placeholder.com/35x35">
+      <div class="media-body">
+        <h5 class="mt-0">{{ user | userName }}</h5>
+        <h6 class="mt-0">Role</h6>
+      </div>
+    </div>
+  </a>
+</ng-container>

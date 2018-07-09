@@ -1,0 +1,23 @@
+<ng-container
+  *ngFor="let group of nav; trackBy: trackChild;"
+>
+  <ng-container *ngIf="group.display">
+    <a
+      [routerLink]="[group.routerLink || '/']"
+      [ngClass]="{'active': group.active, 'opened': group.open }"
+    >
+      <mat-list-item>
+        <mat-icon matListIcon>{{ group.icon || 'folder' }}</mat-icon>
+        <span matLine>{{ group.name  }}</span>
+      </mat-list-item>
+    </a>
+    <app-sidenav-collapse
+      *ngIf="group.hasChildren"
+      [@menuExpansion]="group.open ? 'opened' : 'closed'"
+      (@menuExpansion.done)="_menuAnimation($event)"
+      (@menuExpansion.start)="_menuAnimation($event)"
+      [nav]="group.children"
+      [ngClass]="group.classes"
+    ></app-sidenav-collapse>
+  </ng-container>
+</ng-container>
