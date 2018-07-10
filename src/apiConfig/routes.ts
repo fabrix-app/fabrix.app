@@ -4,10 +4,8 @@
  *
  * Configure how routes map to views and controllers.
  *
- * @see http://fabrixjs.io/doc/config/routes.js
+ * @see http://fabrix.app/doc/config/routes.js
  */
-
-'use strict'
 
 export const routes = [
   // Handle 404s and more
@@ -89,6 +87,12 @@ export const routes = [
   {
     method: 'GET',
     path: '/start',
+    handler: 'ViewController.index'
+  },
+
+  {
+    method: 'GET',
+    path: '/doc',
     handler: 'ViewController.index'
   },
 

@@ -2,7 +2,7 @@
  * Trailpack Configuration
  * (app.config.main)
  *
- * @see http://fabrixjs.io/doc/config/main
+ * @see https://fabrix.app/doc/config/main
  */
 
 import { resolve, join } from 'path'
