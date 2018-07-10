@@ -1,5 +1,5 @@
 {
-  "index": "/views/index.ng.html",
+  "index": "/index.ng.html",
   "assetGroups": [{
     "name": "appShell",
     "installMode": "prefetch",
@@ -9,10 +9,7 @@
         "/assets/images/icons/favicon-16x16.ico",
         "/assets/images/icons/favicon-32x32.ico",
         "/assets/images/icons/favicon-96x96.ico",
-        "/views/index.ng.html",
-        "/*.bundle.css",
-        "/*.bundle.js",
-        "/*.chunk.js"
+        "/index.ng.html"
       ]
     }
   }, {
@@ -28,7 +25,8 @@
     "name": "fonts",
     "resources": {
       "urls": [
-        "https://fonts.googleapis.com/**",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700",
+        "https://fonts.googleapis.com/icon?family=Material+Icons",
         "https://fonts.gstatic.com/**"
       ]
     }

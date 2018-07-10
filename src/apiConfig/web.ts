@@ -146,7 +146,7 @@ export const web = {
         ]
       })
     },
-    path: join('dist', 'browser', 'views')
+    path: join('dist', 'browser')
   }
 
   /**

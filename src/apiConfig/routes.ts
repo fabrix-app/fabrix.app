@@ -47,6 +47,13 @@ export const routes = [
   },
   {
     method: [ 'GET' ],
+    path: '/login',
+    handler: 'ViewController.index',
+    config: {}
+  },
+  // Robots
+  {
+    method: [ 'GET' ],
     path: '/sitemap.xml',
     handler: {
       file: 'assets/sitemap.xml'

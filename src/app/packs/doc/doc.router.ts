@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router'
 
 
 // Containers
-import { HomeComponent } from './containers/home/home.component'
+import { DocComponent } from './containers/doc/doc.component'
 import { MainComponent } from './containers/main/main.component'
 
 // Guards
@@ -16,13 +16,9 @@ export const ROUTES: Routes = [
     children: [
       {
         path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'doc',
-        loadChildren: 'app/packs/doc/doc.module#DocsModule'
+        component: DocComponent
       }
     ]
   }
 ]
-export const homeRouter = RouterModule.forChild(ROUTES)
+export const docRouter = RouterModule.forChild(ROUTES)
