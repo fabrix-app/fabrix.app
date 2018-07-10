@@ -104,6 +104,12 @@ export const routes = [
 
   {
     method: 'GET',
+    path: '/api/v1/doc/{docpath*}',
+    handler: 'DocController.doc'
+  },
+
+  {
+    method: 'GET',
     path: '/search',
     handler: 'ViewController.index'
   },
