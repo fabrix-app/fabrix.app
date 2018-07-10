@@ -45,17 +45,8 @@ export const routes = [
     handler: 'ViewController.index',
     config: {}
   },
-  // Activity
   {
-    method: 'GET',
-    path: '/favicon.png',
-    handler: {
-      file: 'assets/img/favicon.png'
-    }
-  },
-
-  {
-    method: 'GET',
+    method: [ 'GET' ],
     path: '/sitemap.xml',
     handler: {
       file: 'assets/sitemap.xml'
@@ -63,53 +54,53 @@ export const routes = [
   },
 
   {
-    method: 'GET',
+    method: [ 'GET' ],
     path: '/robots.txt',
     handler: {
       file: 'assets/robots.txt'
     }
   },
 
-  {
-    method: 'GET',
-    path: '/',
-    handler: 'ViewController.home'
-  },
+  // {
+  //   method: 'GET',
+  //   path: '/',
+  //   handler: 'ViewController.home'
+  // },
 
   {
     method: 'GET',
     path: '/plugins',
-    handler: 'ViewController.plugins'
+    handler: 'ViewController.index'
   },
 
   {
     method: 'GET',
     path: '/support',
-    handler: 'ViewController.support'
+    handler: 'ViewController.index'
   },
 
   {
     method: 'GET',
     path: '/start',
-    handler: 'ViewController.start'
+    handler: 'ViewController.index'
   },
 
   {
     method: 'GET',
     path: '/doc/{docpath*}',
-    handler: 'ViewController.doc'
+    handler: 'ViewController.index'
   },
 
   {
     method: 'GET',
     path: '/search',
-    handler: 'FabrixController.search'
+    handler: 'ViewController.index'
   },
 
   {
     method: 'GET',
     path: '/collective/budget/{project}',
-    handler: 'CollectiveController.getAnnualBudget'
+    handler: 'ViewController.index'
   }
 
   // Proxy Router

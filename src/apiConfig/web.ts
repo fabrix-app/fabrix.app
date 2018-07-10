@@ -17,13 +17,14 @@ const bodyParser = require('body-parser')
 
 const DIST_FOLDER = join(process.cwd(), 'dist')
 
+
 /**
  * Server Configuration
  * (app.config.web)
  *
  * Configure the Web Server
  *
- * @see {@link http://fabrixjs.io/doc/config/web}
+ * @see {@link http://fabrix.app/doc/config/web}
  */
 export const web = {
   express: express,
@@ -49,18 +50,11 @@ export const web = {
       'addMethods',
       'cookieParser',
       'session',
-      // 'passportInit',
-      // 'passportSession',
-      // 'proxyCartInit',
-      // 'proxyCartSession',
-      // 'proxyCartSessionCart',
-      // 'proxyCartSessionCustomer',
       'bodyParser',
       'compression',
       'methodOverride',
       'poweredBy',
       'www',
-      // 'proxyRouter',
       'router',
       '404',
       '500'
@@ -73,13 +67,13 @@ export const web = {
     //   bodyParser.urlencoded({extended: false})
     // ],
     bodyParser: bodyParser.json(),
-    cookieParser: cookieParser('proxy-engine'),
+    cookieParser: cookieParser('fabrix'),
     compression: require('compression')({
       level: 9,
       threshold: 4096
     }),
     poweredBy: function(req, res, next) {
-      res.set('X-Powered-By', 'Proxy Engine <cali-style.com>')
+      res.set('X-Powered-By', 'Fabrix <cali-style.com>')
       next()
     },
     // proxyRouter: function(req, res, next) {
