@@ -15,7 +15,7 @@ export const ROUTES: Routes = [
     component: MainComponent,
     children: [
       {
-        path: '',
+        path: '*',
         component: DocComponent
       }
     ]

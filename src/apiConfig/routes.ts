@@ -7,117 +7,79 @@
  * @see http://fabrix.app/doc/config/routes.js
  */
 
-export const routes = [
+export const routes = {
   // Handle 404s and more
-  {
-    method: [ 'GET' ],
-    path: '/404',
-    handler: 'ViewController.index',
+  '/404': {
+    'GET': 'ViewController.index',
     config: {}
   },
-  {
-    method: [ 'GET' ],
-    path: '/500',
-    handler: 'ViewController.index',
+  '/500': {
+    'GET': 'ViewController.index',
     config: {}
   },
-  {
-    method: [ 'GET' ],
-    path: '/403',
-    handler: 'ViewController.index',
+  '/403': {
+    'GET': 'ViewController.index',
     config: {}
   },
-  {
-    method: [ 'GET' ],
-    path: '/401',
-    handler: 'ViewController.index',
+  '/401': {
+    'GET': 'ViewController.index',
     config: {}
   },
   /**
    * Render the view
    */
   // Home
-  {
-    method: [ 'GET' ],
-    path: '/',
-    handler: 'ViewController.index',
+  '/': {
+    'GET': 'ViewController.index',
     config: {}
   },
-  {
-    method: [ 'GET' ],
-    path: '/login',
-    handler: 'ViewController.index',
+  '/login': {
+    'GET': 'ViewController.index',
     config: {}
   },
   // Robots
-  {
-    method: [ 'GET' ],
-    path: '/sitemap.xml',
-    handler: {
+  '/sitemap.xml': {
+    'GET': {
       file: 'assets/sitemap.xml'
     }
   },
 
-  {
-    method: [ 'GET' ],
-    path: '/robots.txt',
-    handler: {
+  '/robots.txt': {
+    'GET': {
       file: 'assets/robots.txt'
     }
   },
 
-  // {
-  //   method: 'GET',
-  //   path: '/',
-  //   handler: 'ViewController.home'
-  // },
+  '/plugins': {
+    'GET': 'ViewController.index'
+  },
 
-  {
-    method: 'GET',
-    path: '/plugins',
+  '/support': {
+    'GET': 'ViewController.index'
+  },
+
+  '/start': {
+    'GET': 'ViewController.index'
+  },
+
+  '/doc': {
+    'GET': 'ViewController.index'
+  },
+
+  '/doc/{docpath*}': {
     handler: 'ViewController.index'
   },
 
-  {
-    method: 'GET',
-    path: '/support',
-    handler: 'ViewController.index'
+  '/api/v1/doc/{docpath*}': {
+    'GET': 'DocController.doc'
   },
 
-  {
-    method: 'GET',
-    path: '/start',
-    handler: 'ViewController.index'
+  '/search': {
+    'GET': 'ViewController.index'
   },
 
-  {
-    method: 'GET',
-    path: '/doc',
-    handler: 'ViewController.index'
-  },
-
-  {
-    method: 'GET',
-    path: '/doc/{docpath*}',
-    handler: 'ViewController.index'
-  },
-
-  {
-    method: 'GET',
-    path: '/api/v1/doc/{docpath*}',
-    handler: 'DocController.doc'
-  },
-
-  {
-    method: 'GET',
-    path: '/search',
-    handler: 'ViewController.index'
-  },
-
-  {
-    method: 'GET',
-    path: '/collective/budget/{project}',
-    handler: 'ViewController.index'
+  '/collective/budget/{project}': {
+    'GET': 'ViewController.index'
   }
 
   // Proxy Router
@@ -127,4 +89,4 @@ export const routes = [
   //   handler: 'ViewController.proxyRouter',
   //   config: {}
   // }
-]
+}

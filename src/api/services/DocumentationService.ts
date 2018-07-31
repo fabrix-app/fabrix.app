@@ -13,7 +13,7 @@ export class DocumentationService extends Service {
     return {
       protocol: 'https',
       host: 'fabrix-app.github.io',
-      base: 'doc',
+      base: 'docs',
       defaultLanguage: 'en',
       defaultExtension: 'html',
       supportedLanguages: [
