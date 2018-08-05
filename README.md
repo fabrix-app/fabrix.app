@@ -37,7 +37,7 @@ Configs in a module should be exported and combined in `appConfig/main`, so that
 
 # Configuring your Application
 ## Fabrix
-For Fabrix documentation see the [Fabrix Website](https://fabrixjs.io).  The only difference is that we are extending fabrix with Typescript and bundling it with webpack. You can configure Fabrix through `src/apiConfig`.
+For Fabrix documentation see the [Fabrix Website](https://fabrix.app). You can configure Fabrix through `src/apiConfig`.
 
 ## Angular
 For Angular documentation see the [Angular Website](https://angular.io).  You can configure your NgEngine Angular app through `src/appConfig`. 
