@@ -67,7 +67,9 @@ export const routes = {
   },
 
   '/doc/{docpath*}': {
-    handler: 'ViewController.index'
+    'GET': {
+      handler: 'ViewController.index'
+    }
   },
 
   '/api/v1/doc/{docpath*}': {
