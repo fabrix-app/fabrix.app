@@ -4,7 +4,7 @@ export const session = {
   /**
    * Secret use by express for his session
    */
-  secret: 'proxy-engine-ng',
+  secret: 'fabrix-app',
 
   /**
    * Store use by express for saving his session

@@ -40,13 +40,17 @@ export const routes = {
   // Robots
   '/sitemap.xml': {
     'GET': {
-      file: 'assets/sitemap.xml'
+      handler: {
+        file: 'assets/sitemap.xml'
+      }
     }
   },
 
   '/robots.txt': {
     'GET': {
-      file: 'assets/robots.txt'
+      handler: {
+        file: 'assets/robots.txt'
+      }
     }
   },
 

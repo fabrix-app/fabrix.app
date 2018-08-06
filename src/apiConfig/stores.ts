@@ -5,9 +5,10 @@
  */
 export const stores = {
   sqlitedev: {
+    orm: 'sequelize',
     database: 'dev',
-      storage: './dist/dev.sqlite',
-      host: '127.0.0.1',
-      dialect: 'sqlite'
+    storage: './dist/dev.sqlite',
+    host: '127.0.0.1',
+    dialect: 'sqlite'
   }
 }
