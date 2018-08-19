@@ -1,3 +1,3 @@
-import { DocEventsEffects } from './docs'
+import { DocsEffects } from './docs'
 
-export { DocEventsEffects }
+export { DocsEffects }

@@ -23,7 +23,7 @@ import {
 } from '../actions/docs'
 
 @Injectable()
-export class DocEventsEffects {
+export class DocsEffects {
 
   constructor(
     private _ngEngine: NgEngineService,
@@ -33,7 +33,7 @@ export class DocEventsEffects {
 
   // Dispatch just to let the console know we did
   @Effect({dispatch: false}) init$: Observable<any> = defer(() => of(null)).pipe(
-    tap(() => this._ngEngine.log('DocEventsEffects.init$', 'Doc Events Effects Initiated')),
+    tap(() => this._ngEngine.log('DocsEffects.init$', 'Docs Effects Initiated')),
   )
 
   // // Listen for the 'Event Search' actions

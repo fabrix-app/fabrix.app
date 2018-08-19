@@ -1,29 +1,29 @@
 import { Action } from '@ngrx/store'
-import { Event } from '../../models/Event'
-import { EventQuery } from '../../models/EventQuery'
+import { Doc } from '../../models/Doc'
+import { DocQuery } from '../../models/DocQuery'
 
 export enum ActionTypes {
   // BACKEND
-  FIND_ALL =                       '[Doc Event] Find All',
-  FIND_ALL_SUCCESS =               '[Doc Event] Find All Success',
-  FIND_ALL_FAILURE =               '[Doc Event] Find All Failure',
-  SEARCH =                         '[Doc Event] Search',
-  SEARCH_SUCCESS =                 '[Doc Event] Search Success',
-  SEARCH_FAILURE =                 '[Doc Event] Search Failure',
-  FIND_ONE =                       '[Doc Event] Find One',
-  FIND_ONE_SUCCESS =               '[Doc Event] Find One Success',
-  FIND_ONE_FAILURE =               '[Doc Event] Find One Failure',
+  FIND_ALL =                       '[Doc] Find All',
+  FIND_ALL_SUCCESS =               '[Doc] Find All Success',
+  FIND_ALL_FAILURE =               '[Doc] Find All Failure',
+  SEARCH =                         '[Doc] Search',
+  SEARCH_SUCCESS =                 '[Doc] Search Success',
+  SEARCH_FAILURE =                 '[Doc] Search Failure',
+  FIND_ONE =                       '[Doc] Find One',
+  FIND_ONE_SUCCESS =               '[Doc] Find One Success',
+  FIND_ONE_FAILURE =               '[Doc] Find One Failure',
 
   // UTILITIES
-  LOAD =                           '[Doc Event] Load',
-  SELECT =                         '[Doc Event] Select',
-  DESELECT =                       '[Doc Event] Deselect'
+  LOAD =                           '[Doc] Load',
+  SELECT =                         '[Doc] Select',
+  DESELECT =                       '[Doc] Deselect'
 }
 
-// Events Find All
+// Docs Find All
 export class FindAllAction implements Action {
   readonly type = ActionTypes.FIND_ALL
-  constructor(public payload: EventQuery) { }
+  constructor(public payload: DocQuery) { }
 }
 
 export class FindAllSuccessAction implements Action {
@@ -36,10 +36,10 @@ export class FindAllFailureAction implements Action {
   constructor(public payload: any) { }
 }
 
-// Events Search
+// Docs Search
 export class SearchAction implements Action {
   readonly type = ActionTypes.SEARCH
-  constructor(public payload: EventQuery) { }
+  constructor(public payload: DocQuery) { }
 }
 
 export class SearchSuccessAction implements Action {
@@ -52,15 +52,15 @@ export class SearchFailureAction implements Action {
   constructor(public payload: any) { }
 }
 
-// Event Find One
+// Doc Find One
 export class FindOneAction implements Action {
   readonly type = ActionTypes.FIND_ONE
-  constructor(public payload: Event['id']) { }
+  constructor(public payload: Doc['id']) { }
 }
 
 export class FindOneSuccessAction implements Action {
   readonly type = ActionTypes.FIND_ONE_SUCCESS
-  constructor(public payload: Event) { }
+  constructor(public payload: Doc) { }
 }
 
 export class FindOneFailureAction implements Action {
@@ -68,15 +68,15 @@ export class FindOneFailureAction implements Action {
   constructor(public payload: any) { }
 }
 
-// Event Load
+// Doc Load
 export class LoadAction implements Action {
   readonly type = ActionTypes.LOAD
-  constructor(public payload: Event) { }
+  constructor(public payload: Doc) { }
 }
-// Event Select/Deselect
+// Doc Select/Deselect
 export class SelectAction implements Action {
   readonly type = ActionTypes.SELECT
-  constructor(public payload: Event['id']) { }
+  constructor(public payload: Doc['id']) { }
 }
 export class DeselectAction implements Action {
   readonly type = ActionTypes.DESELECT

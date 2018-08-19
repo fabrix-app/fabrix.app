@@ -8,11 +8,11 @@ import { SharedModule } from '../../../shared/shared.module'
 // // Services
 // import { ServicesModule } from '../services/index'
 //
-// // Controllers
-// import { ControllersModule } from '../controllers/controllers.module'
-//
-// // Guards
-// import { GuardsModule } from '../guards/index'
+// Controllers
+import { ControllersModule } from '../controllers/controllers.module'
+
+// Guards
+import { GuardsModule } from '../guards/index'
 //
 // // Resolvers
 // import { ResolversModule } from '../resolvers/index'
@@ -35,8 +35,8 @@ export const COMPONENTS = [
     RouterModule,
     SharedModule,
     // ServicesModule,
-    // ControllersModule,
-    // GuardsModule,
+    ControllersModule,
+    GuardsModule,
     // ResolversModule,
     // ComponentsModule
   ],

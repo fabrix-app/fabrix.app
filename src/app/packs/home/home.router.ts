@@ -21,6 +21,10 @@ export const ROUTES: Routes = [
       {
         path: 'doc',
         loadChildren: 'app/packs/doc/doc.module#DocModule'
+      },
+      {
+        path: 'start',
+        loadChildren: 'app/packs/doc/doc.module#DocModule'
       }
     ]
   }

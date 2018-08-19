@@ -1,24 +1,24 @@
 import { ActionReducerMap, createSelector, createFeatureSelector } from '@ngrx/store'
-import * as fromEvents from './docs'
+import * as fromDocs from './docs'
 
 /**
  * Default State
  */
 export interface State {
-  events: fromEvents.State
+  docs: fromDocs.State
 }
 
 /**
  * Default Reducers
  */
 export const reducers: ActionReducerMap<State> = {
-  events: fromEvents.reducer
+  docs: fromDocs.reducer
 }
 
 // In this function dynamic state slices, if they exist, will overwrite static state at runtime.
 export function getInitialState() {
   return {
-    events: fromEvents.initialState
+    docs: fromDocs.initialState
   }
 }
 
@@ -28,12 +28,12 @@ export function getInitialState() {
 export const getDocState = createFeatureSelector<any>('doc')
 
 /**
- * Events Events State
+ * Docs Docs State
  */
-export const getDocEventsState = createSelector(getDocState, (state) => state['events'])
-export const getEventsAll = createSelector(getDocEventsState, fromEvents.getAll)
-export const getEventsLoaded = createSelector(getDocEventsState, fromEvents.getLoaded)
-export const getEventsLoading = createSelector(getDocEventsState, fromEvents.getLoading)
-export const getEventsPagination = createSelector(getDocEventsState, fromEvents.getPagination)
-export const getEventsEntities = createSelector(getDocEventsState, fromEvents.getEntities)
-export const getEventsSelected = createSelector(getDocEventsState, fromEvents.getSelected)
+export const getDocDocsState = createSelector(getDocState, (state) => state['docs'])
+export const getDocsAll = createSelector(getDocDocsState, fromDocs.getAll)
+export const getDocsLoaded = createSelector(getDocDocsState, fromDocs.getLoaded)
+export const getDocsLoading = createSelector(getDocDocsState, fromDocs.getLoading)
+export const getDocsPagination = createSelector(getDocDocsState, fromDocs.getPagination)
+export const getDocsEntities = createSelector(getDocDocsState, fromDocs.getEntities)
+export const getDocsSelected = createSelector(getDocDocsState, fromDocs.getSelected)

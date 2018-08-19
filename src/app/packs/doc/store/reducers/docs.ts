@@ -1,13 +1,13 @@
 import { createSelector } from '@ngrx/store'
 import * as actions from '../actions/docs'
-import { Event } from '../../models/Event'
+import { Doc } from '../../models/Doc'
 
 export interface State {
   loaded: boolean
   loading: boolean
   ids: string[]
-  entities: { [ids: string]: Event }
-  selectedEventId: number | null
+  entities: { [ids: string]: Doc }
+  selectedDocId: number | null
   total: number
   offset: number
   limit: number
@@ -24,7 +24,7 @@ export const initialState: State = {
   loading: false,
   ids: [],
   entities: {},
-  selectedEventId: null,
+  selectedDocId: null,
   total: 0,
   offset: 0,
   limit: 10,
@@ -48,64 +48,64 @@ export function reducer(state = initialState, action: actions.Actions): State {
       }
     }
 
-    case actions.ActionTypes.FIND_ALL:
-    case actions.ActionTypes.SEARCH: {
-      return {
-        ...state,
-        loaded: false,
-        loading: true,
-        filter: action.payload.filter || state.filter,
-        sort: action.payload.sort || state.sort,
-        includes: action.payload.includes || state.includes,
-      }
-    }
-
-    case actions.ActionTypes.FIND_ALL_SUCCESS:
-    case actions.ActionTypes.SEARCH_SUCCESS: {
-      const events = action.payload.rows
-      const pagination = action.payload.pagination
-
-      const newEventIds = events.map(event => event.id)
-      const newEventEntities = events.reduce((entities: { [id: string]: Event }, event: Event) => {
-
-        return Object.assign(entities, {
-          [event.id]: event
-        })
-      }, {})
-
-      return {
-        ...state,
-        loaded: true,
-        loading: false,
-        ids: [ ...newEventIds ],
-        entities: newEventEntities,
-        total: pagination.total,
-        offset: pagination.offset,
-        limit: pagination.limit,
-        page: pagination.page,
-        pages: pagination.pages,
-        filter: pagination.filter,
-        sort: pagination.sort
-      }
-
-    }
+    // case actions.ActionTypes.FIND_ALL:
+    // case actions.ActionTypes.SEARCH: {
+    //   return {
+    //     ...state,
+    //     loaded: false,
+    //     loading: true,
+    //     filter: action.payload.filter || state.filter,
+    //     sort: action.payload.sort || state.sort,
+    //     includes: action.payload.includes || state.includes,
+    //   }
+    // }
+    //
+    // case actions.ActionTypes.FIND_ALL_SUCCESS:
+    // case actions.ActionTypes.SEARCH_SUCCESS: {
+    //   const docs = action.payload.rows
+    //   const pagination = action.payload.pagination
+    //
+    //   const newDocIds = docs.map(doc => doc.id)
+    //   const newDocEntities = docs.reduce((entities: { [id: string]: Doc }, doc: Doc) => {
+    //
+    //     return Object.assign(entities, {
+    //       [doc.id]: doc
+    //     })
+    //   }, {})
+    //
+    //   return {
+    //     ...state,
+    //     loaded: true,
+    //     loading: false,
+    //     ids: [ ...newDocIds ],
+    //     entities: newDocEntities,
+    //     total: pagination.total,
+    //     offset: pagination.offset,
+    //     limit: pagination.limit,
+    //     page: pagination.page,
+    //     pages: pagination.pages,
+    //     filter: pagination.filter,
+    //     sort: pagination.sort
+    //   }
+    //
+    // }
 
     // case actions.ActionTypes.LOAD:
     case actions.ActionTypes.FIND_ONE_SUCCESS: {
 
-      const event = action.payload
+      const doc = action.payload
 
-      const events = Object.assign({}, state.entities, {
-        [event.id]: event
+      const docs = Object.assign({}, state.entities, {
+        [doc.id]: doc
       })
 
       return Object.assign({}, state, {
         ...state,
         loading: false,
         loaded: true,
-        ids: Object.keys(events),
-        entities: events,
-        selectedEventId: event.id
+        ids: Object.keys(docs),
+        entities: docs,
+        selectedDocId: doc.id
       })
     }
 
@@ -127,7 +127,7 @@ export function reducer(state = initialState, action: actions.Actions): State {
         ...state,
         loading: false,
         loaded: true,
-        selectedEventId: action.payload.id
+        selectedDocId: action.payload.id
       }
     }
 
@@ -136,7 +136,7 @@ export function reducer(state = initialState, action: actions.Actions): State {
         ...state,
         loading: false,
         loaded: true,
-        selectedEventId: action.payload
+        selectedDocId: action.payload
       }
     }
 
@@ -145,7 +145,7 @@ export function reducer(state = initialState, action: actions.Actions): State {
         ...state,
         loading: false,
         loaded: true,
-        selectedEventId: null
+        selectedDocId: null
       }
     }
 
@@ -160,12 +160,12 @@ export const getLoaded = (state: State) => state['loaded']
 export const getLoading = (state: State) => state['loading']
 export const getIds = (state: State) => state['ids']
 export const getEntities = (state: State) => state['entities']
-export const getSelectedId = (state: State) => state['selectedEventId']
+export const getSelectedId = (state: State) => state['selectedDocId']
 
 export const getSelected = createSelector(getEntities, getSelectedId, (entities, selectedId) => {
   return entities[selectedId]
 })
-/** Get All Events */
+/** Get All Docs */
 export const getAll = createSelector(getEntities, getIds, (entities, ids) => {
   return ids.map(id => entities[id])
 })

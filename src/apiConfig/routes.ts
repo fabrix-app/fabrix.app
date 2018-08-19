@@ -70,13 +70,13 @@ export const routes = {
     'GET': 'ViewController.index'
   },
 
-  '/doc/{docpath*}': {
+  '/doc/:docpath?': {
     'GET': {
       handler: 'ViewController.index'
     }
   },
 
-  '/api/v1/doc/{docpath*}': {
+  '/api/v1/doc/:docpath?': {
     'GET': 'DocController.doc'
   },
 
@@ -84,7 +84,7 @@ export const routes = {
     'GET': 'ViewController.index'
   },
 
-  '/collective/budget/{project}': {
+  '/collective/budget/:project': {
     'GET': 'ViewController.index'
   }
 

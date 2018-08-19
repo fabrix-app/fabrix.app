@@ -6,7 +6,7 @@ import { DocComponent } from './containers/doc/doc.component'
 import { MainComponent } from './containers/main/main.component'
 
 // Guards
-
+import { DocExistsGuard } from './guards/doc-exists'
 // Resolvers
 
 export const ROUTES: Routes = [
@@ -15,8 +15,9 @@ export const ROUTES: Routes = [
     component: MainComponent,
     children: [
       {
-        path: '*',
-        component: DocComponent
+        path: '**',
+        component: DocComponent,
+        canActivate: [ DocExistsGuard ]
       }
     ]
   }

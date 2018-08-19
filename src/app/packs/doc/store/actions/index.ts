@@ -1,2 +1,2 @@
-import * as eventsActions from './docs'
-export { eventsActions }
+import * as docsActions from './docs'
+export { docsActions }

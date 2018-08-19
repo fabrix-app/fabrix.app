@@ -6,12 +6,12 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Follow @FabrixApp on Twitter][twitter-image]][twitter-url]
 
-:evergreen_tree: Fabrix website hosted on Fabrix
+Fabrix website hosted on Fabrix
 
 ## Features
- - Angular 5 (+ Angular CLI)
- - Server Side Rendering (Universal)
  - Advanced Node.js Backend (Fabrix)
+ - Angular 6 (+ Angular CLI)
+ - Server Side Rendering (Universal)
  - Advanced Angular Configuration (NgEngine + NgPacks)
  - Angular Material
  - Service Workers (PWA)

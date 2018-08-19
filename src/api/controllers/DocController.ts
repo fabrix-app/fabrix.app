@@ -16,7 +16,10 @@ export class DocController extends Controller {
   start (req, res) {
     this.app.services.DocumentationService.proxy([ 'start' ])
       .then(docHtml => {
-        res.json(docHtml)
+        res.json({
+          id: 'start',
+          html: docHtml
+        })
       })
   }
 
@@ -28,7 +31,11 @@ export class DocController extends Controller {
 
     this.app.services.DocumentationService.proxy(docpath)
       .then(docHtml => {
-        res.json(docHtml)
+        this.app.log.debug('DOC PATH', docpath, docHtml)
+        res.json({
+          id: docpath.join('/'),
+          html: docHtml
+        })
       })
       .catch(err => {
         this.log.error(`Documentation 404. Path: ${docpath}`)
