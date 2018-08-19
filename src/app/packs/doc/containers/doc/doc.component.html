@@ -4,7 +4,7 @@
       <!--<app-doc-header></app-doc-header>-->
       Coming Soon!
       <div
-        [innerHtml]="doc$ | async"
+        [innerHtml]="(doc$ | async).html"
       ></div>
     </div>
   </div>

@@ -90,7 +90,7 @@ export function reducer(state = initialState, action: actions.Actions): State {
     //
     // }
 
-    // case actions.ActionTypes.LOAD:
+    case actions.ActionTypes.LOAD:
     case actions.ActionTypes.FIND_ONE_SUCCESS: {
 
       const doc = action.payload

@@ -19,7 +19,7 @@ export const ROUTES: Routes = [
         component: HomeComponent
       },
       {
-        path: 'doc',
+        path: 'docs',
         loadChildren: 'app/packs/doc/doc.module#DocModule'
       },
       {

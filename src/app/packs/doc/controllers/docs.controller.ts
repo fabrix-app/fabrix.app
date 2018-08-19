@@ -34,7 +34,7 @@ export class DocsController {
   /**
    * Find One Event
    */
-  public start(payload: number): Observable<any> {
+  public start(payload: string): Observable<any> {
     return this.http.get(`${ this.url }/start`)
   }
   //
@@ -55,7 +55,8 @@ export class DocsController {
    * Find One
    */
   public findOne(payload) {
-    return this.http.get(`${ this.url }/doc/start`, {params: payload})
+    console.log('fIND ONE', payload)
+    return this.http.get(`${ this.url }${payload}`)
   }
 }
 

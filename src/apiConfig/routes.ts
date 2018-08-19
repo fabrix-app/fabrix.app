@@ -66,17 +66,17 @@ export const routes = {
     'GET': 'ViewController.index'
   },
 
-  '/doc': {
+  '/docs': {
     'GET': 'ViewController.index'
   },
 
-  '/doc/:docpath?': {
+  '/docs/:docpath?': {
     'GET': {
       handler: 'ViewController.index'
     }
   },
 
-  '/api/v1/doc/:docpath?': {
+  '/api/v1/docs/:docpath?': {
     'GET': 'DocController.doc'
   },
 
