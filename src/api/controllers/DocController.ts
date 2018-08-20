@@ -27,11 +27,12 @@ export class DocController extends Controller {
    * Render the documentation pages
    */
   doc (req, res) {
-    const docpath = (req.params.docpath || '').split('/')
+    const docpath = (req.params[0] || '').split('/')
+    this.log.debug('raw path', docpath)
 
     this.app.services.DocumentationService.proxy(docpath)
       .then(docHtml => {
-        this.app.log.debug('DOC PATH', docpath, docHtml)
+        // this.app.log.debug('DOC PATH', docpath, docHtml)
         res.json({
           id: docpath.join('/'),
           html: docHtml

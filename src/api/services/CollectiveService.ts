@@ -1,6 +1,5 @@
 import { FabrixService as Service } from '@fabrix/fabrix/dist/common'
-
-const request = require('request-promise')
+import * as request from 'request-promise'
 
 /**
  * @module CollectiveService

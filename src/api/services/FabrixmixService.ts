@@ -1,6 +1,5 @@
 import { FabrixService as Service } from '@fabrix/fabrix/dist/common'
-
-const request = require('request-promise')
+import * as request from 'request-promise'
 const NPM_URI = 'https://registry.npmjs.org/-/_view/byKeyword?startkey=["spool"]&endkey=["spool",{}]&group_level=3'
 
 /**

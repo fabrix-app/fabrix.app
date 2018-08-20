@@ -1,15 +1,23 @@
 import { FabrixService as Service } from '@fabrix/fabrix/dist/common'
+import * as request from 'request-promise'
+const ISO6391 = require('iso-639-1')
 
-const request = require('request-promise')
-const lang = require('iso-639-1')
-
+export interface git {
+  protocol: string,
+  host: string,
+  base: string,
+  defaultLanguage: string,
+  defaultExtension: string,
+  supportedLanguages: string[],
+  allLanguages: string[]
+}
 /**
  * @module DocumentationService
  * @description Proxy documentation pages
  */
 export class DocumentationService extends Service {
 
-  get git () {
+  get git (): git {
     return {
       protocol: 'https',
       host: 'fabrix-app.github.io',
@@ -19,7 +27,7 @@ export class DocumentationService extends Service {
       supportedLanguages: [
         'en'
       ],
-      allLanguages: lang.getAllCodes()
+      allLanguages: ISO6391.getAllCodes()
     }
   }
 
@@ -44,7 +52,8 @@ export class DocumentationService extends Service {
     const docPath = [ actualLang, ...reqPath ].join('/')
     const uri = `${protocol}://${host}/${base}/${docPath}`
 
-    this.log.info('DocumentationService: proxying uri', uri)
+    this.app.log.debug('DocumentationService params', specifiedLang, actualLang, docPath, reqPath)
+    this.app.log.info('DocumentationService: proxying uri', uri)
 
     return request(uri)
   }
