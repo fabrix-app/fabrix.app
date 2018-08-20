@@ -2,7 +2,7 @@
  * Logging Configuration
  * (app.config.log)
  *
- * @see https://fabrix.app/doc/config/log
+ * @see https://fabrix.app/docs/config/log
  */
 
 'use strict'

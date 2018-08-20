@@ -58,7 +58,7 @@ export const routes = {
     'GET': 'ViewController.index'
   },
 
-  '/support': {
+  '/enterprise': {
     'GET': 'ViewController.index'
   },
 

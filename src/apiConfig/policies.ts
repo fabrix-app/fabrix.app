@@ -7,6 +7,6 @@
  * footprints, therefore the request always will directly reach the intended
  * handler.
  *
- * @see https://fabrix.app/doc/config/policies
+ * @see https://fabrix.app/docs/config/policies
  */
 export const policies = {}

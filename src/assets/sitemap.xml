@@ -30,371 +30,371 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en</loc>
+    <loc>https://fabrix.app/docs/en</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build</loc>
+    <loc>https://fabrix.app/docs/en/build</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/start</loc>
+    <loc>https://fabrix.app/docs/en/start</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/</loc>
+    <loc>https://fabrix.app/docs/en/build/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/controller</loc>
+    <loc>https://fabrix.app/docs/en/build/controller</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/service</loc>
+    <loc>https://fabrix.app/docs/en/build/service</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/policy</loc>
+    <loc>https://fabrix.app/docs/en/build/policy</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/model</loc>
+    <loc>https://fabrix.app/docs/en/build/model</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/resolver</loc>
+    <loc>https://fabrix.app/docs/en/build/resolver</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/</loc>
+    <loc>https://fabrix.app/docs/en/config/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/manifest</loc>
+    <loc>https://fabrix.app/docs/en/config/manifest</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/main</loc>
+    <loc>https://fabrix.app/docs/en/config/main</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/log</loc>
+    <loc>https://fabrix.app/docs/en/config/log</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/routes</loc>
+    <loc>https://fabrix.app/docs/en/config/routes</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/stores</loc>
+    <loc>https://fabrix.app/docs/en/config/stores</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/i18n</loc>
+    <loc>https://fabrix.app/docs/en/config/i18n</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/web</loc>
+    <loc>https://fabrix.app/docs/en/config/web</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/</loc>
+    <loc>https://fabrix.app/docs/en/test/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/intro</loc>
+    <loc>https://fabrix.app/docs/en/test/intro</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/unit</loc>
+    <loc>https://fabrix.app/docs/en/test/unit</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/integration</loc>
+    <loc>https://fabrix.app/docs/en/test/integration</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/debug/</loc>
+    <loc>https://fabrix.app/docs/en/debug/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/</loc>
+    <loc>https://fabrix.app/docs/en/deploy/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/requirements</loc>
+    <loc>https://fabrix.app/docs/en/deploy/requirements</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/providers</loc>
+    <loc>https://fabrix.app/docs/en/deploy/providers</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/security</loc>
+    <loc>https://fabrix.app/docs/en/deploy/security</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/scaling</loc>
+    <loc>https://fabrix.app/docs/en/deploy/scaling</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/extend/</loc>
+    <loc>https://fabrix.app/docs/en/extend/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/extend/trailpack</loc>
+    <loc>https://fabrix.app/docs/en/extend/trailpack</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/extend/service</loc>
+    <loc>https://fabrix.app/docs/en/extend/service</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/extend/views/</loc>
+    <loc>https://fabrix.app/docs/en/extend/views/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/extend/users/</loc>
+    <loc>https://fabrix.app/docs/en/extend/users/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/upgrade/</loc>
+    <loc>https://fabrix.app/docs/en/upgrade/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/upgrade/app</loc>
+    <loc>https://fabrix.app/docs/en/upgrade/app</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/upgrade/trailpack</loc>
+    <loc>https://fabrix.app/docs/en/upgrade/trailpack</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/</loc>
+    <loc>https://fabrix.app/docs/en/ref/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/fabrix</loc>
+    <loc>https://fabrix.app/docs/en/ref/fabrix</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/trailpack</loc>
+    <loc>https://fabrix.app/docs/en/ref/trailpack</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/controller</loc>
+    <loc>https://fabrix.app/docs/en/ref/controller</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/service</loc>
+    <loc>https://fabrix.app/docs/en/ref/service</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/model</loc>
+    <loc>https://fabrix.app/docs/en/ref/model</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/resolver</loc>
+    <loc>https://fabrix.app/docs/en/ref/resolver</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/policy</loc>
+    <loc>https://fabrix.app/docs/en/ref/policy</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/reserved</loc>
+    <loc>https://fabrix.app/docs/en/ref/reserved</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/</loc>
+    <loc>https://fabrix.app/docs/en/about/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/fabrix</loc>
+    <loc>https://fabrix.app/docs/en/about/fabrix</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/theory</loc>
+    <loc>https://fabrix.app/docs/en/about/theory</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/schedule</loc>
+    <loc>https://fabrix.app/docs/en/about/schedule</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/contribute</loc>
+    <loc>https://fabrix.app/docs/en/about/contribute</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/</loc>
+    <loc>https://fabrix.app/docs/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/start.html</loc>
+    <loc>https://fabrix.app/docs/en/start.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/controller.html</loc>
+    <loc>https://fabrix.app/docs/en/build/controller.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/service.html</loc>
+    <loc>https://fabrix.app/docs/en/build/service.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/policy.html</loc>
+    <loc>https://fabrix.app/docs/en/build/policy.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/model.html</loc>
+    <loc>https://fabrix.app/docs/en/build/model.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/resolver.html</loc>
+    <loc>https://fabrix.app/docs/en/build/resolver.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/</loc>
+    <loc>https://fabrix.app/docs/en/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/extend/services.md</loc>
+    <loc>https://fabrix.app/docs/en/extend/services.md</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/manifest.html</loc>
+    <loc>https://fabrix.app/docs/en/config/manifest.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/main.html</loc>
+    <loc>https://fabrix.app/docs/en/config/main.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/log.html</loc>
+    <loc>https://fabrix.app/docs/en/config/log.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/routes.html</loc>
+    <loc>https://fabrix.app/docs/en/config/routes.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/stores.html</loc>
+    <loc>https://fabrix.app/docs/en/config/stores.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/i18n.html</loc>
+    <loc>https://fabrix.app/docs/en/config/i18n.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/config/web.html</loc>
+    <loc>https://fabrix.app/docs/en/config/web.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/theory.md</loc>
+    <loc>https://fabrix.app/docs/en/ref/theory.md</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/build/trailpack.html</loc>
+    <loc>https://fabrix.app/docs/en/build/trailpack.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/trailpack.html</loc>
+    <loc>https://fabrix.app/docs/en/ref/trailpack.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/overview.html</loc>
+    <loc>https://fabrix.app/docs/en/test/overview.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/unit.html</loc>
+    <loc>https://fabrix.app/docs/en/test/unit.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/integration.html</loc>
+    <loc>https://fabrix.app/docs/en/test/integration.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/requirements.html</loc>
+    <loc>https://fabrix.app/docs/en/deploy/requirements.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/providers.html</loc>
+    <loc>https://fabrix.app/docs/en/deploy/providers.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/security.html</loc>
+    <loc>https://fabrix.app/docs/en/deploy/security.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/deploy/scaling.html</loc>
+    <loc>https://fabrix.app/docs/en/deploy/scaling.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/upgrade/app.html</loc>
+    <loc>https://fabrix.app/docs/en/upgrade/app.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/upgrade/trailpack.html</loc>
+    <loc>https://fabrix.app/docs/en/upgrade/trailpack.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/fabrix.html</loc>
+    <loc>https://fabrix.app/docs/en/ref/fabrix.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/controller.html</loc>
+    <loc>https://fabrix.app/docs/en/ref/controller.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/policy.html</loc>
+    <loc>https://fabrix.app/docs/en/ref/policy.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/service.html</loc>
+    <loc>https://fabrix.app/docs/en/ref/service.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/model.html</loc>
+    <loc>https://fabrix.app/docs/en/ref/model.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/resolver.html</loc>
+    <loc>https://fabrix.app/docs/en/ref/resolver.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/fabrix.md</loc>
+    <loc>https://fabrix.app/docs/en/fabrix.md</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/ref/build/trailpack.md</loc>
+    <loc>https://fabrix.app/docs/en/ref/build/trailpack.md</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/fabrix.html</loc>
+    <loc>https://fabrix.app/docs/en/about/fabrix.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/theory.html</loc>
+    <loc>https://fabrix.app/docs/en/about/theory.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/schedule.html</loc>
+    <loc>https://fabrix.app/docs/en/about/schedule.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/about/contribute.html</loc>
+    <loc>https://fabrix.app/docs/en/about/contribute.html</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/test-indexjs</loc>
+    <loc>https://fabrix.app/docs/en/test/test-indexjs</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/test-unit</loc>
+    <loc>https://fabrix.app/docs/en/test/test-unit</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://fabrix.app/doc/en/test/test-integration</loc>
+    <loc>https://fabrix.app/docs/en/test/test-integration</loc>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
