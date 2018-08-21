@@ -1,5 +1,5 @@
 // Common/Core
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core'
+import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core'
 import { ActivatedRoute, Router, UrlTree } from '@angular/router'
 
 // NgEngine
@@ -27,7 +27,8 @@ import { Doc } from '../../models/Doc'
   selector: 'app-doc',
   templateUrl: './doc.component.html',
   styleUrls: ['./doc.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None
 })
 export class DocComponent implements OnInit {
 
