@@ -30,6 +30,10 @@ import { CoreModule } from './core/core.module'
 // For Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+// Angulartics2GoogleAnalytics
+import { Angulartics2Module } from 'angulartics2'
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga'
+
 // Service Worker
 import { ServiceWorkerModule } from '@angular/service-worker'
 
@@ -58,8 +62,14 @@ import * as appConfig from '../appConfig'
       maxAge: 25,
       // logOnly: environment.production
     }),
+    // Forms
     NgrxFormsModule,
+    // Configuration
     NgEngineModule,
+    // Angularitcs
+    Angulartics2Module.forRoot([
+      Angulartics2GoogleAnalytics
+    ]),
     appConfig.environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [

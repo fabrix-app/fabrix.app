@@ -67,6 +67,7 @@
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
     "angular2-moment": "^1.9.0",
+    "angulartics2": "^5.0.0",
     "bootstrap": "^4.1.0",
     "core-js": "^2.4.1",
     "express": "^4.16.2",

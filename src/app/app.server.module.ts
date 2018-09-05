@@ -19,6 +19,10 @@ import { CoreModule } from './core/core.module'
 // For Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+// Angulartics2GoogleAnalytics
+import { Angulartics2Module } from 'angulartics2'
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga'
+
 // App Config for NgEngine
 import * as appConfig from '../appConfig'
 
@@ -30,6 +34,7 @@ import { EffectsModule } from '@ngrx/effects'
 import { NgrxFormsModule } from 'ngrx-forms'
 import { reducers, getInitialState } from './core/store/reducers'
 import { AuthEffects } from './core/store/effects'
+
 
 @NgModule({
   imports: [
@@ -47,8 +52,14 @@ import { AuthEffects } from './core/store/effects'
     }),
     EffectsModule.forRoot([ AuthEffects ]),
     // StoreRouterConnectingModule,
+    // Forms
     NgrxFormsModule,
-    NgEngineModule
+    // Configuration
+    NgEngineModule,
+    // Angularitcs
+    Angulartics2Module.forRoot([
+      Angulartics2GoogleAnalytics
+    ]),
   ],
   providers: [
     {
