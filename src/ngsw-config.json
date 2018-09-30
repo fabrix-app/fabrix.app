@@ -1,5 +1,5 @@
 {
-  "index": "/index.ng.html",
+  "index": "/index.html",
   "assetGroups": [{
     "name": "appShell",
     "installMode": "prefetch",
@@ -9,7 +9,7 @@
         "/assets/images/icons/favicon-16x16.ico",
         "/assets/images/icons/favicon-32x32.ico",
         "/assets/images/icons/favicon-96x96.ico",
-        "/index.ng.html"
+        "/index.html"
       ]
     }
   }, {

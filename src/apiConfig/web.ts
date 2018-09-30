@@ -139,7 +139,7 @@ export const web = {
    */
   views: {
     engines: {
-      'ng.html': ngExpressEngine({
+      'html': ngExpressEngine({
         bootstrap: AppServerModuleNgFactory,
         providers: [
           provideModuleMap(LAZY_MODULE_MAP)

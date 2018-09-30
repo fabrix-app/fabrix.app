@@ -3,17 +3,55 @@
     <div class="col-sm-12">
       <app-home-header></app-home-header>
     </div>
-    <div class="col-sm-12">
-      <p>
-        <img
-          src="https://fabrix-app.s3.us-east-2.amazonaws.com/web/sw-002-1_rect-01-01.png"
-          width="550px"
-        />
-      </p>
+    <div class="col-sm-12 col-md-6 text-center">
+      <img
+        src="https://fabrix-app.s3.us-east-2.amazonaws.com/web/sw-002-1_rect-01-01.png"
+        width="100%"
+      />
+      <h1>A Strongly Typed Modern Web Application Framework.</h1>
+      <h2>Written TypeScript for Node.js</h2>
       <p>This website is under construction!</p>
       <p>
         <a [routerLink]="['docs/en/start']">Start</a> | <a [routerLink]="['docs/en']">Docs</a>
       </p>
+    </div>
+  </div>
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-12 col-md-4">
+      <pre class="highlight">
+<code>
+$ npm install @fabrix/fab-cli -g
+$ fab app myApp
+$ cd myApp && npm run compile && node dist/server
+</code>
+      </pre>
+    </div>
+  </div>
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-12 col-md-12 text-center">
+      <h2>Start Weaving the Web</h2>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <h3>Modern, Concise</h3>
+      <p>
+        Fabrix represents a new, advanced generation of Node.js framework, unencumbered by the tumultuous legacy of Javascript. Designed around the Event-Sourced and CQRS patterns, its unreasonably concise codebase is entirely in the ES6/ES7+ dialect, which improves performance, testability, stability, and security.
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <h3>Hyper-Modular, Un-Opinionated</h3>
+      <p>
+        Quilt from a pattern. Or don't. With Fabrix, there's no cargo cult. Your team can use the design patterns and existing Node modules they already know. The capability of the framework itself is up to you, the developer, by choosing precisely the modules you need to make your application great.
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <h3>Community Driven</h3>
+      <p>
+        Fabrix presents a modern, coherent design surrounded by a thriving and diverse open-source ecosystem. Hundreds of Fabrix addons and integrations, published and maintained by the community and corporate sponsors alike, are immediately available for use in your project.
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-12 text-center">
+      <h2>Try Fabrix</h2>
+      <a [routerLink]="['./start']">Get Started</a>
     </div>
   </div>
 </div>

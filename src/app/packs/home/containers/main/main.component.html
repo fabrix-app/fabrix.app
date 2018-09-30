@@ -1,30 +1,41 @@
 <mat-sidenav-container>
-  <mat-sidenav
-    [mode]="sidenav?.mode"
-    [opened]="sidenav?.opened"
-    [fixedInViewport]="sidenav?.fixedInViewport"
-    [fixedTopGap]="sidenav?.fixedTopGap"
-    [fixedBottomGap]="sidenav?.fixedBottomGap"
-  >
-    <app-sidenav
-      [user]="user$ | async"
-      [isAuthenticated]="isAuthenticated$ | async"
-      [nav]="nav$ | async"
-      (toggle)="toggleNavChild($event)"
-    ></app-sidenav>
-  </mat-sidenav>
+  <!--<mat-sidenav-->
+    <!--[mode]="sidenav?.mode"-->
+    <!--[opened]="sidenav?.opened"-->
+    <!--[fixedInViewport]="sidenav?.fixedInViewport"-->
+    <!--[fixedTopGap]="sidenav?.fixedTopGap"-->
+    <!--[fixedBottomGap]="sidenav?.fixedBottomGap"-->
+  <!--&gt;-->
+    <!--<app-sidenav-->
+      <!--[user]="user$ | async"-->
+      <!--[isAuthenticated]="isAuthenticated$ | async"-->
+      <!--[nav]="nav$ | async"-->
+      <!--(toggle)="toggleNavChild($event)"-->
+    <!--&gt;</app-sidenav>-->
+  <!--</mat-sidenav>-->
 
   <mat-sidenav-content>
     <header class="header container-fluid stuck" [ngStyle]="{'height.px': header?.height}">
-      <app-header
-        [nav]="nav$ | async"
-      ></app-header>
+      <div class="row">
+        <div class="col-12">
+          <app-header
+            [nav]="nav$ | async"
+          ></app-header>
+        </div>
+      </div>
     </header>
     <div class="container-fluid" [ngStyle]="{'padding-top.px': header?.height}">
       <router-outlet></router-outlet>
+      <div class="row">
+        <div class="col-12">
+          <footer>
+            <a [routerLink]="['./']">Home</a>
+            <a [routerLink]="['./start']">Getting Started</a>
+          </footer>
+        </div>
+      </div>
     </div>
   </mat-sidenav-content>
-
 </mat-sidenav-container>
 <!--<div class="container">-->
   <!--<div class="row justify-content-center">-->

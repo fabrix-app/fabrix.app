@@ -80,9 +80,13 @@ export const routes = {
     'GET': 'DocController.start'
   },
 
-  '/api/v1/docs/*': {
+  '/api/v1/docs*': {
     'GET': 'DocController.doc'
   },
+
+  // '/api/v1/docs/*': {
+  //   'GET': 'DocController.doc'
+  // },
 
   '/search': {
     'GET': 'ViewController.index'
