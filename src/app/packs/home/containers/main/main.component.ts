@@ -2,6 +2,10 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core'
 import { Router, NavigationStart, NavigationEnd } from '@angular/router'
 import { chain } from 'lodash'
 
+// Analytics
+import { Angulartics2 } from 'angulartics2'
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga'
+
 // NgEngine
 import { NgEngineService } from 'ng-engine'
 
@@ -70,7 +74,9 @@ export class MainComponent implements OnInit {
     private _ngEngine: NgEngineService,
     private _store: Store<any>,
     private _navigation: NavigationService,
-    private _router: Router
+    private _router: Router,
+    // private _angulartics2: Angulartics2,
+    private _angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics
   ) {
     this.header = this._ngEngine.config.get('app.header')
     this.sidenav = this._ngEngine.config.get('app.sidenav')
