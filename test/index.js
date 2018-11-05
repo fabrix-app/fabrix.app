@@ -1,10 +1,10 @@
 'use strict'
-
+const path = require('path')
+const DIST_FOLDER = path.join(process.cwd(), 'dist', 'server.test')
 const FabrixApp = require('@fabrix/fabrix').FabrixApp
-const App = require('../dist')
 
 before(() => {
-  global.app = new FabrixApp(App)
+  global.app = new FabrixApp(require(DIST_FOLDER).fabrixConfig)
   return global.app.start().catch(global.app.stop)
 })
 

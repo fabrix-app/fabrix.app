@@ -3,12 +3,12 @@
 const assert = require('assert')
 
 describe('CollectiveService', () => {
-  it('should exist', () => {
+  it.skip('should exist', () => {
     assert(global.app.services.CollectiveService)
   })
 
   describe('#getAnnualBudget', () => {
-    it('should return cents in annual budget for fabrix', () => {
+    it.skip('should return cents in annual budget for fabrix', () => {
       return global.app.services.CollectiveService.getAnnualBudget('fabrix')
         .then(budget => {
           console.log(budget)

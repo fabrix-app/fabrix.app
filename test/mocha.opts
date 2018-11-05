@@ -2,8 +2,7 @@
 --recursive
 --full-trace
 --slow 50
---no-exit
---check-leaks
---globals app,__core-js_shared__,__coverage__
+--timeout 10000
+--globals app,Zone,ng,__coverage__,__core-js_shared__,$$bole
 
-test/index.js test/**/*.test.js
+test/index.js test/api/**/*.test.js

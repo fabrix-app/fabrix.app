@@ -31,7 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppComponent } from './app.component'
 
 
-describe('AppComponent', () => {
+fdescribe('AppComponent', () => {
   let component: AppComponent
   let location: Location
   let router: Router
